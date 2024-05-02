@@ -1,0 +1,119 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #bbb3b1, #caccce);
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #ceccce;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para o botão "Mostrar Catálogo" */
+#toggleCarousel {
+    background-color: #5c5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+#toggleCarousel:hover {
+    background-color: #a3a3a3; /* Cor de fundo alterada no hover */
+}
+
+/* Estilos para o contêiner do logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para o logo */
+#logo img {
+    max-width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para a vitrine */
+.vitrine {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.vitrine h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.vitrine p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Estilos para o carrossel de imagens */
+.carousel {
+    display: none; /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.carousel img {
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.05); /* Aumenta a escala da imagem */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+}
+
+/* Estilos para os botões do carrossel */
+#prevButton, #nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#prevButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
